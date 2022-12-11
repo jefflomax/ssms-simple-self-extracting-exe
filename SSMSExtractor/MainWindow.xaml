@@ -1,0 +1,55 @@
+﻿<Window x:Class="SSMSExtractor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SSMSExtractor"
+        mc:Ignorable="d"
+        Title="SSMS Extension Extractor" Height="400" Width="800" Topmost="True">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Settings.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <StackPanel Orientation="Vertical"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="5,0,5,0">
+        <Label x:Name="extractFolderLabel"
+               Content="Choose Extract Folder for "
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Height="39"
+               Width="564"
+               FontSize="18"
+               Margin="0,0,0,20"/>
+        <StackPanel
+            Orientation="Horizontal"
+            Margin="0,0,0,20">
+            <TextBox x:Name="extractPath"
+                     HorizontalAlignment="Left"
+                     TextWrapping="Wrap" 
+                     Text="{StaticResource defaultFolder}"
+                     Width="650"
+                     FontSize="16"/>
+            <Button x:Name="choosePath"
+                    Content="Choose Folder"
+                    Click="choosePath_Click"
+                    Width="110"
+                    Margin="8,0,0,0"/>
+        </StackPanel>
+        <Button x:Name="extract"
+                Content="Extract Extension to Folder" 
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" FontSize="18"
+                Click="extract_Click"/>
+        <Label x:Name="status"
+               HorizontalAlignment="Center"
+               FontSize="16"/>
+        <ListBox x:Name="steps"
+                 Height="100"
+                 d:ItemsSource="{d:SampleData ItemCount=5}"/>
+    </StackPanel>
+</Window>
