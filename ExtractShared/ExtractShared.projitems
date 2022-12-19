@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>162a04e3-a87e-4956-9986-e1f580a81606</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ExtractShared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ConfigureExtractor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExtractEmbedded.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IConfigureExtractor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ILog.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Archive\SourceControlDeepLinks-0.9.0.zip" />
+  </ItemGroup>
+</Project>

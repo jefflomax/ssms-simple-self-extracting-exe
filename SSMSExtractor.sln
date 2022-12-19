@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33103.201
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSMSExtractor", "SSMSExtractor\SSMSExtractor.csproj", "{68139EF3-D780-4162-BC15-D1AC2953AE90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SSMSExtractor", "SSMSExtractor\SSMSExtractor.csproj", "{68139EF3-D780-4162-BC15-D1AC2953AE90}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SSMSExtractorConsole", "SSMSExtractorConsole\SSMSExtractorConsole.csproj", "{0A8EAA29-1207-4286-A659-E648E3116801}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ExtractShared", "ExtractShared\ExtractShared.shproj", "{162A04E3-A87E-4956-9986-E1F580A81606}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,11 +19,20 @@ Global
 		{68139EF3-D780-4162-BC15-D1AC2953AE90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68139EF3-D780-4162-BC15-D1AC2953AE90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68139EF3-D780-4162-BC15-D1AC2953AE90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A8EAA29-1207-4286-A659-E648E3116801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A8EAA29-1207-4286-A659-E648E3116801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A8EAA29-1207-4286-A659-E648E3116801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A8EAA29-1207-4286-A659-E648E3116801}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8F133910-A20B-4E2A-A0C1-392103A247D6}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ExtractShared\ExtractShared.projitems*{0a8eaa29-1207-4286-a659-e648e3116801}*SharedItemsImports = 5
+		ExtractShared\ExtractShared.projitems*{162a04e3-a87e-4956-9986-e1f580a81606}*SharedItemsImports = 13
+		ExtractShared\ExtractShared.projitems*{68139ef3-d780-4162-bc15-d1ac2953ae90}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal
