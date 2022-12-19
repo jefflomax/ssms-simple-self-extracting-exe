@@ -19,12 +19,14 @@ namespace SSMSExtractor
 			InitializeComponent();
 
 			var extensionName = GetResource( "extName" );
+			var assembly = this.GetType().Assembly;
+			var assemblyName = assembly.GetName().Name;
 
 			var config = new ConfigFromXaml
 			(
 				extensionName,
 				GetResource( "extFolder" ),
-				GetResource( "resource" ),
+				$"{assemblyName}.{GetResource( "resource" )}",
 				GetResource( "defaultFolder" )
 			);
 

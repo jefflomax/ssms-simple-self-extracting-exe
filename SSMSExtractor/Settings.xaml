@@ -3,7 +3,7 @@
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
     <system:String x:Key="extName">Source Control Deep Links</system:String>
     <system:String x:Key="extFolder">SourceControlDeepLinks</system:String>
-    <system:String x:Key="resource">SSMSExtractor.Archive.SourceControlDeepLinks-0.9.0.zip</system:String>
+    <system:String x:Key="resource">Archive.SourceControlDeepLinks-0.9.0.zip</system:String>
     <system:String x:Key="defaultFolder">C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\Extensions</system:String>
 
 </ResourceDictionary>
